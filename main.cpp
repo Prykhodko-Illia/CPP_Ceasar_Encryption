@@ -5,7 +5,7 @@ int main() {
     typedef char *(*encrypt_t)(char *, int);
     typedef char *(*decrypt_t)(char *, int);
 
-    HINSTANCE handle = LoadLibrary(TEXT("..//ceasar_encryption.dll"));
+    HINSTANCE handle = LoadLibrary(TEXT(".//ceasar_encryption.dll"));
     if (handle == nullptr || handle == INVALID_HANDLE_VALUE) {
         std::cout << "Lib not found" << std::endl;
         return 1;
