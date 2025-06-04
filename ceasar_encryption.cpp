@@ -1,5 +1,4 @@
 ﻿#include "ceasar_encryption.h"
-#include <iostream>
 
 char *encrypt(char *rawText, int key) {
     for (int i = 0; rawText[i] != '\0'; i++) {
